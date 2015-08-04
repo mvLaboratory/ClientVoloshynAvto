@@ -51,7 +51,7 @@ import java.net.Socket;
     public void run() {
         while (true) {
             try {
-                System.out.println("run");;
+                System.out.println("run");
                 connection = new Socket(InetAddress.getByName("localhost"), 5678);
                 output = new ObjectOutputStream(connection.getOutputStream());
                 intput = new ObjectInputStream(connection.getInputStream());
